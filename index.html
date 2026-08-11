@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARKitetura | A Wiki de Construções do ARK</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #09080d;
+      color: white;
+    }
+
+    header {
+      padding: 25px 8%;
+      border-bottom: 1px solid #352744;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #a855f7;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    .hero {
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(circle at center, #32114d 0%, #130c1c 40%, #09080d 75%);
+    }
+
+    .hero h1 {
+      font-size: 70px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #a855f7;
+    }
+
+    .hero p {
+      color: #bbb;
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+
+    .busca {
+      width: min(650px, 90%);
+      padding: 18px 22px;
+      border-radius: 12px;
+      border: 1px solid #63368c;
+      background: #15111b;
+      color: white;
+      font-size: 17px;
+      outline: none;
+    }
+
+    .conteudo {
+      max-width: 1200px;
+      margin: auto;
+      padding: 55px 25px;
+    }
+
+    .conteudo h2 {
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .categorias {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #15111b;
+      border: 1px solid #29202f;
+      border-radius: 14px;
+      padding: 35px 20px;
+      text-align: center;
+      transition: .2s;
+    }
+
+    .card:hover {
+      border-color: #a855f7;
+      transform: translateY(-4px);
+    }
+
+    .card strong {
+      display: block;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      padding: 35px;
+      border-top: 1px solid #29202f;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><span>ARK</span>itetura</div>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Construções</a>
+    <a href="#">Mapas</a>
+    <a href="#">Categorias</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1><span>ARK</span>itetura</h1>
+  <p>A Wiki de Construções do ARK</p>
+
+  <input
+    class="busca"
+    type="text"
+    placeholder="🔎 O que você quer construir?"
+  >
+</section>
+
+<section class="conteudo">
+  <h2>Explore construções</h2>
+
+  <div class="categorias">
+    <div class="card">🏠<strong>Casas</strong></div>
+    <div class="card">🏰<strong>Castelos</strong></div>
+    <div class="card">🏭<strong>Bases</strong></div>
+    <div class="card">🌊<strong>Aquáticas</strong></div>
+    <div class="card">🌿<strong>Fazendas</strong></div>
+    <div class="card">⚔️<strong>PvP</strong></div>
+  </div>
+</section>
+
+<footer>
+  ARKitetura — A Wiki de Construções do ARK
+</footer>
+
+</body>
+</html>
