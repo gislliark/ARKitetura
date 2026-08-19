@@ -145,7 +145,21 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+.botao-card {
+  display: inline-block;
+  color: #b96cff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
 
+.botao-card:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #a855f7;
+}
 @media (max-width: 800px) {
   .categorias {
     grid-template-columns: 1fr;
@@ -204,7 +218,7 @@ style="width:82vw; max-width:1500px; height:auto; display:block; margin:20px aut
     <div class="card-icone"><i class="fa-solid fa-house-chimney"></i></div>
     <h3>Casas</h3>
     <p>Modelos de casas para todos os estilos e tamanhos.</p>
-    <span>Ver construções</span>
+    <a href="casas.html" class="botao-card">Ver construções</a>
   </div>
 
   <div class="card">
