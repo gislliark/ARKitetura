@@ -90,30 +90,65 @@
       font-size: 28px;
     }
 
-    .categorias {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 18px;
-    }
+   .categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
 
-    .card {
-      background: #15111b;
-      border: 1px solid #29202f;
-      border-radius: 14px;
-      padding: 35px 20px;
-      text-align: center;
-      transition: .2s;
-    }
+.card {
+  position: relative;
+  min-height: 190px;
+  background:
+    radial-gradient(circle at top, rgba(133, 85, 247, 0.18), transparent 55%),
+    linear-gradient(145deg, #17111f, #0b0910);
+  border: 1px solid #4b286d;
+  border-radius: 18px;
+  padding: 30px 22px;
+  text-align: center;
+  transition: 0.3s;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
 
-    .card:hover {
-      border-color: #a855f7;
-      transform: translateY(-4px);
-    }
+.card:hover {
+  border-color: #a855f7;
+  transform: translateY(-7px);
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.45),
+    0 0 22px rgba(168,85,247,0.28);
+}
 
-    .card strong {
-      display: block;
-      margin-top: 10px;
-    }
+.card-icone {
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-size: 21px;
+  margin: 8px 0;
+  color: #ffffff;
+}
+
+.card p {
+  color: #aaa2b3;
+  font-size: 14px;
+  margin: 8px 0 20px;
+}
+
+.card span {
+  color: #b96cff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .categorias {
+    grid-template-columns: 1fr;
+  }
+}
 
     footer {
       text-align: center;
@@ -161,14 +196,50 @@ style="width:82vw; max-width:1500px; height:auto; display:block; margin:20px aut
 <section class="conteudo">
   <h2>Explore construções</h2>
 
-  <div class="categorias">
-    <div class="card">🏠<strong>Casas</strong></div>
-    <div class="card">🏰<strong>Castelos</strong></div>
-    <div class="card">🏭<strong>Bases</strong></div>
-    <div class="card">🌊<strong>Aquáticas</strong></div>
-    <div class="card">🌿<strong>Fazendas</strong></div>
-    <div class="card">⚔️<strong>PvP</strong></div>
+ <div class="categorias">
+  <div class="card">
+    <div class="card-icone">🏠</div>
+    <h3>Casas</h3>
+    <p>Residenciais, modernas e temáticas</p>
+    <span>Explorar →</span>
   </div>
+
+  <div class="card">
+    <div class="card-icone">🏰</div>
+    <h3>Castelos</h3>
+    <p>Fortalezas e construções medievais</p>
+    <span>Explorar →</span>
+  </div>
+
+  <div class="card">
+    <div class="card-icone">🏭</div>
+    <h3>Bases</h3>
+    <p>Bases funcionais para todos os estilos</p>
+    <span>Explorar →</span>
+  </div>
+
+  <div class="card">
+    <div class="card-icone">🌊</div>
+    <h3>Aquáticas</h3>
+    <p>Construções no mar, rios e lagos</p>
+    <span>Explorar →</span>
+  </div>
+
+  <div class="card">
+    <div class="card-icone">🌿</div>
+    <h3>Fazendas</h3>
+    <p>Áreas de cultivo, criação e produção</p>
+    <span>Explorar →</span>
+  </div>
+
+  <div class="card">
+    <div class="card-icone">⚔️</div>
+    <h3>PvP</h3>
+    <p>Defesas, fortalezas e bases de combate</p>
+    <span>Explorar →</span>
+  </div>
+
+</div>
 </section>
 
 <footer>
