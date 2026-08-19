@@ -137,7 +137,38 @@
       text-align: center;
       padding: 35px;
     }
+.secao-gi {
+  margin: 35px 0 25px;
+  padding: 22px 25px;
+  border: 1px solid #7c3aed;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(168,85,247,0.14), rgba(15,10,20,0.8));
+  box-shadow: 0 0 25px rgba(168,85,247,0.12);
+}
 
+.titulo-secao {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.titulo-secao i {
+  font-size: 38px;
+  color: #a855f7;
+  filter: drop-shadow(0 0 8px rgba(168,85,247,0.6));
+}
+
+.titulo-secao h2 {
+  margin: 0 0 6px;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.titulo-secao p {
+  margin: 0;
+  color: #aaa2b3;
+  font-size: 14px;
+}
     @media (max-width: 900px) {
       .projetos {
         grid-template-columns: 1fr;
@@ -165,13 +196,21 @@
 <section class="cabecalho-casas">
   <i class="fa-solid fa-house-chimney"></i>
   <h1>Casas</h1>
-  <p>Projetos residenciais criados pela comunidade ARKitetura.</p>
+ <p>Inspire-se, construa e compartilhe. Projetos da Gi e da comunidade ARKitetura.</p>
 </section>
 
 <main class="conteudo">
 
   <a class="voltar" href="index.html">← Voltar para o início</a>
-
+<section class="secao-gi">
+  <div class="titulo-secao">
+    <i class="fa-solid fa-crown"></i>
+    <div>
+      <h2>ARKitetura by Gi</h2>
+      <p>Construções autorais, projetos e inspirações criados por Gi.</p>
+    </div>
+  </div>
+</section>
   <div class="projetos">
 
     <div class="projeto vazio">
