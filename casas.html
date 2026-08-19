@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Casas | ARKitetura</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #09080d;
+      color: white;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #352744;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #a855f7;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 26px;
+    }
+
+    nav a:hover {
+      color: #a855f7;
+    }
+
+    .cabecalho-casas {
+      text-align: center;
+      padding: 70px 20px 45px;
+      background:
+        radial-gradient(circle at top, rgba(168,85,247,0.18), transparent 55%);
+    }
+
+    .cabecalho-casas i {
+      font-size: 48px;
+      color: #a855f7;
+      filter: drop-shadow(0 0 10px rgba(168,85,247,0.45));
+      margin-bottom: 18px;
+    }
+
+    .cabecalho-casas h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .cabecalho-casas p {
+      color: #aaa2b3;
+      font-size: 16px;
+    }
+
+    .conteudo {
+      width: 84%;
+      margin: 0 auto;
+      padding: 45px 0 80px;
+    }
+
+    .projetos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .projeto {
+      min-height: 260px;
+      background:
+        radial-gradient(circle at top, rgba(133,85,247,0.16), transparent 55%),
+        linear-gradient(145deg, #17111f, #0b0910);
+      border: 1px solid #4b286d;
+      border-radius: 16px;
+      padding: 28px;
+      transition: .3s;
+    }
+
+    .projeto:hover {
+      transform: translateY(-6px);
+      border-color: #a855f7;
+      box-shadow: 0 0 24px rgba(168,85,247,.25);
+    }
+
+    .projeto h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .projeto p {
+      color: #aaa2b3;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .projeto span {
+      color: #b96cff;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .vazio {
+      opacity: .65;
+    }
+
+    .voltar {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #b96cff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      border-top: 1px solid #29202f;
+      color: #777;
+      text-align: center;
+      padding: 35px;
+    }
+
+    @media (max-width: 900px) {
+      .projetos {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><span>ARK</span>itetura</div>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="casas.html">Casas</a>
+    <a href="#">Categorias</a>
+  </nav>
+</header>
+
+<section class="cabecalho-casas">
+  <i class="fa-solid fa-house-chimney"></i>
+  <h1>Casas</h1>
+  <p>Projetos residenciais criados pela comunidade ARKitetura.</p>
+</section>
+
+<main class="conteudo">
+
+  <a class="voltar" href="index.html">← Voltar para o início</a>
+
+  <div class="projetos">
+
+    <div class="projeto vazio">
+      <h3>Primeira construção</h3>
+      <p>Aqui entraremos com foto, tamanho, mapa, materiais e passo a passo.</p>
+      <span>Em breve</span>
+    </div>
+
+    <div class="projeto vazio">
+      <h3>Nova construção</h3>
+      <p>Espaço reservado para um projeto enviado pela comunidade.</p>
+      <span>Em breve</span>
+    </div>
+
+    <div class="projeto vazio">
+      <h3>Nova construção</h3>
+      <p>Espaço reservado para futuras casas do ARKitetura.</p>
+      <span>Em breve</span>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  ARKitetura — A Wiki de Construções do ARK
+</footer>
+
+</body>
+</html>
